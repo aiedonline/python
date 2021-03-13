@@ -3,8 +3,8 @@ import random;
 from browser import *;
 
 class Google (Browser):
-	def __init__(self):
-		super().__init__();
+	def __init__(self,socks5=None):
+		super().__init__(socks5=socks5);
 	def executeBusca(self, palavras):
 		print("O senhor está pesquisando: ", palavras);
 		paginas = ["https://www.google.com.br", "https://www.google.com", "https://www.google.com.ar", "https://www.google.com.vn", "https://www.google.com.pa",
